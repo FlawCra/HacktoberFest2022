@@ -1,4 +1,4 @@
 hacktoberfest:
-- all: ['**/*','!.github/**']
+- all: ['**/*','!.github/**', '!LICENSE', 'README.md']
 hacktoberfest-accepted:
-- all: ['**/*','!.github/**']
+- all: ['**/*','!.github/**', '!LICENSE', 'README.md']
