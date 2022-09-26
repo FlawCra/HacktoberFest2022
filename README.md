@@ -2,6 +2,10 @@
 
 This repository will automatically assign the `hacktoberfest` and `hacktoberfest-accepted` labels to all submitted pull requests.
 
+**NEW THIS YEAR: This repository will also automatically merge your code after assigning the labels.**
+
+**NOTE: We can revert your PR so don't abuse it!**
+
 **Please do not abuse this system as you will be disqualified anyway.**
 
 This repository is meant to simplify the process of assigning the labels as many other repos have take a lot of time to do this.
