@@ -1,3 +1,4 @@
+![](https://raw.githubusercontent.com/FlawCra/HacktoberFest2022/main/.github/assets/Hfest-Logo-2-Color-Manga.svg)
 # HacktoberFest2022
 
 This repository will automatically assign the `hacktoberfest` and `hacktoberfest-accepted` labels to all submitted pull requests.
