@@ -26,7 +26,7 @@ jobs:
         # The label name to automatically merge. Default is "automerge".
         label-name: hacktoberfest
         # The number of reviewers to automatically merge. Default is 1.
-        reviewers-number: 1
+        reviewers-number: 0
         # The merge method ("merge", "squash", "rebase"). Default is "merge"
         merge-method: squash
         # Let the bot delete the merged branch. true or false.
