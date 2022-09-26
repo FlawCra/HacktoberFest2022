@@ -1,0 +1,35 @@
+# This workflow will triage pull requests and apply a label based on the
+# paths that are modified in the pull request.
+#
+# To use this workflow, you will need to set up a .github/labeler.yml
+# file with configuration.  For more information, see:
+# https://github.com/actions/labeler
+
+name: Labeler
+on: [pull_request]
+
+jobs:
+  label:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+    - uses: actions/labeler@v2
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+    - name: Automatically Merge PR
+      uses: plm9606/automerge_actions@1.2.2
+      with:
+        # The label name to automatically merge. Default is "automerge".
+        label-name: hacktoberfest
+        # The number of reviewers to automatically merge. Default is 1.
+        reviewers-number: 1
+        # The merge method ("merge", "squash", "rebase"). Default is "merge"
+        merge-method: squash
+        # Let the bot delete the merged branch. true or false.
+        auto-delete: false
+        # GitHub WebHook Secret Token
+        github-token: ${{ secrets.GITHUB_TOKEN }}
